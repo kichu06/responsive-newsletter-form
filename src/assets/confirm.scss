@@ -1,0 +1,49 @@
+@import './variables';
+
+.confirm-container {
+    padding: 30px;
+    background-color: $white;
+    max-width: 700px;
+    border-radius: 25px;
+    overflow: hidden;
+    max-width: 300px;
+
+    .success-img-container {
+        width: 60px;
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:598px) {
+    .confirm-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+        text-align: left;
+        max-width: none;
+        height: 100vh;
+    }
+
+
+
+
+    button {
+        margin-bottom: 50px;
+        margin-top: auto;
+    }
+
+
+}

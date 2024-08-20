@@ -1,0 +1,58 @@
+@import './variables';
+@import './font';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-regular;
+    background-color: $charcoal-grey;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+p {
+    margin: 0px;
+    font-size: $font-size-paragraph;
+    font-weight: $font-weight-normal;
+    color: $dark-slate-grey;
+}
+
+h1,
+h2,
+h3 {
+    color: $dark-slate-grey;
+    margin: 0px;
+    font-weight: $font-weight-bold;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    color: $white;
+    background-color: $dark-slate-grey;
+    border-radius: 5px;
+    border: 1px solid $dark-slate-grey;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(to right, #f963ae, #f5581f);
+        box-shadow: 0 6px 12px rgba(255, 85, 31, 0.4);
+        border: none;
+    }
+}
+
+
+@media (max-width: 598px) {
+    body {
+        background-color: $white;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
